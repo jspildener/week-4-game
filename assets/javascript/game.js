@@ -24,21 +24,23 @@ $(document).ready(function() {
         blueGem = gemNumber();
         yellowGem = gemNumber();
         greenGem = gemNumber();
-
+        totalScore = 0;
+        $("#totalScore").text(totalScore);
     }
-
 
 var checkWinLoss = function() {
     if (totalScore === randomNumber) {
         totalWins++;
         console.log("win");
         $("#totalWin").text(totalWins);
+        resetGame();
     } else if (totalScore < randomNumber) {
     	console.log("continue");
     } else {
         totalLosses++;
         console.log("loss");
         $("#totalLosses").text(totalLosses);
+        resetGame();
     }
 }
 
