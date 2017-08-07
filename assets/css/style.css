@@ -1,3 +1,23 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
 header {
 	text-align: center;
+	margin-bottom: 40px;
+	border: 10px;
+	color: #202c39;
+
+
+}
+.rules{
+	background: #17BEBB;
+	padding: 15px;
+	color: #FBFFFE;
+	font-size: 18px;
+}
+.button {
+	height: 62px;
+	width: 62px;
 }
